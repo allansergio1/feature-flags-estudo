@@ -15,4 +15,5 @@ public class TaskDto {
     private String description;
     private TaskStatus status;
     private TaskPriority priority;
+    private boolean archived;
 }

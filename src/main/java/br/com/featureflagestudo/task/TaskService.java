@@ -47,4 +47,11 @@ public class TaskService {
                 .orElseThrow(() -> new RuntimeException("Task not found"));
         taskRepository.delete(task);
     }
+
+    public void archiveTask(Long taskId) {
+        Task task = taskRepository.findById(taskId)
+                .orElseThrow(() -> new RuntimeException("Task not found"));
+        task.archive();
+        taskRepository.save(task);
+    }
 }

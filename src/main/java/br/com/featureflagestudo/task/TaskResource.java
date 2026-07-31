@@ -31,6 +31,12 @@ public class TaskResource {
         return ResponseEntity.ok(TaskMapper.map(taskService.updateTask(id, taskUpdateDto)));
     }
 
+    @PatchMapping("/{id}/archive")
+    @ResponseStatus(HttpStatus.OK)
+    public void archiveTask(@PathVariable Long id) {
+        taskService.archiveTask(id);
+    }
+
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteTask(@PathVariable Long id) {

@@ -22,6 +22,7 @@ public class TaskMapper {
                 .description(task.getDescription())
                 .status(task.getStatus())
                 .priority(task.getPriority())
+                .archived(task.isArchived())
                 .build();
     }
 }

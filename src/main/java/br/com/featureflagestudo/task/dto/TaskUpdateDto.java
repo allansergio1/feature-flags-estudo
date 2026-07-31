@@ -7,6 +7,7 @@ public record TaskUpdateDto(
         String title,
         String description,
         TaskStatus status,
-        TaskPriority priority
+        TaskPriority priority,
+        boolean archived
 ) {
 }

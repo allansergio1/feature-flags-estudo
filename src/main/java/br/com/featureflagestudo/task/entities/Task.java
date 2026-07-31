@@ -22,4 +22,9 @@ public class Task {
     private TaskStatus status;
     @Enumerated(EnumType.STRING)
     private TaskPriority priority;
+    private boolean archived;
+
+    public void archive() {
+        this.archived = true;
+    }
 }
