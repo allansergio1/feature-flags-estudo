@@ -2,7 +2,6 @@ package br.com.featureflagestudo.task;
 
 import br.com.featureflagestudo.task.dto.TaskDto;
 import br.com.featureflagestudo.task.dto.TaskRegisterDto;
-import br.com.featureflagestudo.task.entities.Task;
 
 public class TaskMapper {
 

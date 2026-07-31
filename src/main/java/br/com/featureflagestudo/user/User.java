@@ -1,4 +1,4 @@
-package br.com.featureflagestudo.task.entities;
+package br.com.featureflagestudo.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

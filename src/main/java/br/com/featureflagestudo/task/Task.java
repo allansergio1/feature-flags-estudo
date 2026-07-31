@@ -1,4 +1,4 @@
-package br.com.featureflagestudo.task.entities;
+package br.com.featureflagestudo.task;
 
 import br.com.featureflagestudo.task.enums.TaskPriority;
 import br.com.featureflagestudo.task.enums.TaskStatus;

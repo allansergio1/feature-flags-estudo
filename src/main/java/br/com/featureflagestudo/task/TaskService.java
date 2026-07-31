@@ -2,7 +2,6 @@ package br.com.featureflagestudo.task;
 
 import br.com.featureflagestudo.task.dto.TaskRegisterDto;
 import br.com.featureflagestudo.task.dto.TaskUpdateDto;
-import br.com.featureflagestudo.task.entities.Task;
 import br.com.featureflagestudo.task.enums.TaskStatus;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
