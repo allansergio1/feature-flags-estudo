@@ -1,6 +1,7 @@
 package br.com.featureflagestudo.task.dto;
 
-import br.com.featureflagestudo.task.entities.TaskStatus;
+import br.com.featureflagestudo.task.enums.TaskPriority;
+import br.com.featureflagestudo.task.enums.TaskStatus;
 import lombok.*;
 
 @Getter
@@ -13,4 +14,5 @@ public class TaskDto {
     private String title;
     private String description;
     private TaskStatus status;
+    private TaskPriority priority;
 }

@@ -1,5 +1,7 @@
 package br.com.featureflagestudo.task.entities;
 
+import br.com.featureflagestudo.task.enums.TaskPriority;
+import br.com.featureflagestudo.task.enums.TaskStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,4 +20,6 @@ public class Task {
     private String description;
     @Enumerated(EnumType.STRING)
     private TaskStatus status;
+    @Enumerated(EnumType.STRING)
+    private TaskPriority priority;
 }
