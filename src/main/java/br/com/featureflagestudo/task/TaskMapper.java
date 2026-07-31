@@ -12,6 +12,7 @@ public class TaskMapper {
         return Task.builder()
                 .title(task.title())
                 .description(task.description())
+                .priority(task.priority())
                 .build();
     }
 
@@ -20,6 +21,7 @@ public class TaskMapper {
                 .title(task.getTitle())
                 .description(task.getDescription())
                 .status(task.getStatus())
+                .priority(task.getPriority())
                 .build();
     }
 }

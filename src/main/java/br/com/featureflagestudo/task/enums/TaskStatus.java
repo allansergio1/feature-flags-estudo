@@ -1,4 +1,4 @@
-package br.com.featureflagestudo.task;
+package br.com.featureflagestudo.task.enums;
 
 public enum TaskStatus {
 
