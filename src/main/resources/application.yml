@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: feature-flag-estudo
+
+io:
+  getunleash:
+    api-url: http://localhost:4242/api/
+    app-name: unleash-onboarding-java
+    instance-id: unleash-onboarding-instance
+    api-token: default:development.d0c08a6e597def62659c34c5a8a41b952dbd3315df80ff20f761a1ef
