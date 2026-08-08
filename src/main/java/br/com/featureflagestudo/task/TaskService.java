@@ -4,6 +4,7 @@ import br.com.featureflagestudo.task.dto.TaskRegisterDto;
 import br.com.featureflagestudo.task.dto.TaskUpdateDto;
 import br.com.featureflagestudo.task.entities.Task;
 import br.com.featureflagestudo.task.enums.TaskStatus;
+import io.getunleash.Unleash;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 public class TaskService {
 
     private final TaskRepository taskRepository;
+    private final Unleash unleash;
 
     public Task createTask(TaskRegisterDto task) {
         Task newTask = TaskMapper.map(task);
@@ -31,7 +33,7 @@ public class TaskService {
         if (taskUpdateDto.status() != null) {
             existingTask.setStatus(taskUpdateDto.status());
         }
-        if (taskUpdateDto.priority() != null) {
+        if (unleash.isEnabled("task.priority") && taskUpdateDto.priority() != null) {
             existingTask.setPriority(taskUpdateDto.priority());
         }
         return taskRepository.save(existingTask);
